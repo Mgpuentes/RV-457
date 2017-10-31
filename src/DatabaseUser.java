@@ -11,7 +11,6 @@ public class DatabaseUser {
     private final String dbString = "jdbc:mysql://localhost:3306/rv";
     private final String userName = "root";
     private final String password = "spooky"; //use your pw
-    private String SQLString = "SELECT * FROM customer";
 
     public void showCustomerInfo() {
 
@@ -23,7 +22,7 @@ public class DatabaseUser {
                 statementObj = connectionObj.createStatement();
 
                 //Execute SQL query
-                resultSet = statementObj.executeQuery(SQLString);
+                resultSet = statementObj.executeQuery("SELECT * FROM customer");
 
                 //Process the result set
                 while (resultSet.next()) {
