@@ -10,7 +10,7 @@ public class DatabaseUser {
     private ResultSet resultSet;
     private final String dbString = "jdbc:mysql://localhost:3306/rv";
     private final String userName = "root";
-    private final String password = "spooky";
+    private final String password = "spooky"; //use your pw
     private String SQLString = "SELECT * FROM customer";
 
     public void showCustomerInfo() {
